@@ -17,6 +17,11 @@ class CreateUserView(generics.CreateAPIView):
 
 
 class CreateTokenView(ObtainAuthToken):
-    """Create a new auth token for user."""
+    """
+    Create a new auth token for user.
+
+    We are customizing the ObtainAuthToken because it uses the username
+    instead of email. So, we have made a cutom serializer.
+    """
     serializer_class = AuthTokenSerializer
     renderer_classes = api_settings.DEFAULT_RENDERER_CLASSES
