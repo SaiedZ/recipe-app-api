@@ -1,2 +1,5 @@
 # recipe-app-api
 Recipe API project.
+
+
+![example workflow](https://github.com/SaiedZ/recipe-app-api/actions/workflows/checks/badge.svg)
